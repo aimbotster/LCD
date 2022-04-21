@@ -1,5 +1,14 @@
 public class LCD {
 
+    public static final int WIDTH = 87;
+    public static void horizontalLine() {
+        System.out.print("|");
+        for (int i = 1; i <= WIDTH; i++) {
+            System.out.print("-");
+        }
+        System.out.println("|");
+    }
+
     public static void clearScreen() {
         System.out.println();
         System.out.println();
@@ -31,77 +40,76 @@ public class LCD {
     }
 
     public static void openMainMenu(){
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                          Welcome to Stamford LCD Library Demo                         |");
         System.out.println("|                                                                                       |");
         System.out.println("|                                 Select a Function (1-3)                               |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                                                                       |");
         System.out.println("| 1. Login                                                                              |");
         System.out.println("| 2. Restart                                                                            |");
         System.out.println("| 3. Shutdown                                                                           |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
 
     }
 
-
     public static void openLoginMenu(){
         clearScreen();
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                       Login Menu. Press F1 for more information.                      |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                                                                       |");
         System.out.println("| Enter Username:                                                                       |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
     }
 
 
     public static void openSystemMenu(){
         clearScreen();
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                 Select a Function (1-4)                               |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                                                                       |");
         System.out.println("| 1. Change AC Temperature set point                                                    |");
         System.out.println("| 2. Enable/Disable IP Camera                                                           |");
         System.out.println("| 3. Turn anti-theft system on/off.                                                     |");
         System.out.println("| 4. Exit                                                                               |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
     }
     public static void openRestartConfirmation(){
         clearScreen();
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                 Restart Confirmation                                  |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                                                                       |");
         System.out.println("| Are you sure that you want to restart the system? (Y/N)                               |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
     }
     public static void openShutdownConfirmation(){
         clearScreen();
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                 Shutdown Confirmation                                 |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                                                                       |");
         System.out.println("| Are you sure that you want to shutdown the system? (Y/N)                              |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
     }
     public static void openRestarting(){
         clearScreen();
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                    Restarting.....                                    |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                                                                       |");
         System.out.println("| Please wait while the system is preparing for a restart.                              |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
     }
     public static void openShuttingDown(){
         clearScreen();
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                 Shutting Down.....                                    |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
         System.out.println("|                                                                                       |");
         System.out.println("| Please wait while the system is preparing for a shutdown.                             |");
-        System.out.println("|---------------------------------------------------------------------------------------|");
+        horizontalLine();
     }
 }
